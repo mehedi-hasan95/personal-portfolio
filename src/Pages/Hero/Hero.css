@@ -1,0 +1,5 @@
+.bg-img {
+    background-image: url('../../assets/images/bg.png');
+    position: relative;
+    z-index: 10;
+}
