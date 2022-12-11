@@ -10,7 +10,7 @@ const Hero = () => {
 
 
     return (
-        <div className="h-full md:h-[80vh] relative bg-img py-5">
+        <div className="h-full md:h-[80vh] relative bg-img py-5" id='hero'>
             <div className="flex flex-col justify-center items-center pt-10 md:pt-20">
                 <img className=' h-48 w-48 md:h-64 md:w-64 rounded-full bg-purple-300 mx-auto' src="https://i.ibb.co/9W8265W/Mehedi-Hasan.png" alt="" />
                 <h3 className='text-xl md:text-3xl text-white pt-5'>Hi There, I'm</h3>

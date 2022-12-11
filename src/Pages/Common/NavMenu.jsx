@@ -1,18 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
+
 import reasume from '../../assets/images/Reasume of Mehedi Hasan.pdf';
 
 const NavMenu = () => {
     const menu = <>
-        <li><Link to=''>Home</Link></li>
-        <li><Link to=''>About</Link></li>
-        <li><Link to=''>Skills</Link></li>
-        <li><Link to=''>Projects</Link></li>
-        <li><Link to=''>Contact</Link></li>
+        <li><Link to="hero" smooth={true} offset={-100} duration={500}>Home</Link></li>
+        <li><Link to="skills" smooth={true} offset={-100} duration={500}>Skills</Link></li>
+        <li><Link to="projects" smooth={true} offset={-100} duration={500}>Projects</Link></li>
+        <li><Link to="about" smooth={true} offset={-100} duration={500}>About Me</Link></li>
+        <li><Link to="contact" smooth={true} offset={-150} duration={500}>Contact</Link></li>
         <li><a href={reasume} download>My Resume</a></li>
     </>
     return (
-        <div className="navbar bg-gray-500 text-white">
+        <div className="navbar bg-gray-500 text-white fixed top-0 z-50">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
